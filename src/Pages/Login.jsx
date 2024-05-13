@@ -2,9 +2,12 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div>
-        <a href="/#login" 
-        className='font-semibold hover:text-hoverColor duration-200'>Login</a>
+    <div className='border-2 border-black border-solid rounded-3xl
+    hover:border-sky-500 hover:text-hoverColor'>
+
+     <button className="w-20 h-10 font-semibold cursor:pointer
+     active:bg-buttonColor active:rounded-3xl">
+        Login</button>
     </div>
   )
 }
