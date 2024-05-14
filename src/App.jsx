@@ -7,6 +7,7 @@ import Contact from './Pages/Contact.jsx'
 import About from './Pages/About.jsx' 
 import Cart from './Pages/Cart.jsx' 
 import Login from './Pages/Login.jsx' 
+import Home from './Pages/Home.jsx' 
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Navbar/>
 
       <Routes>
+        <Route path='/home' element={<Home/>} />
         <Route path='/kits' element={<Kits/>} />
         <Route path='/leagues' element={<Leagues/>} />
         <Route path='/contact' element={<Contact/>} />

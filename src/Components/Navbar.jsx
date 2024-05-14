@@ -1,7 +1,7 @@
 import React from 'react'
-import { IoMdSearch } from 'react-icons/io'
 import { FaCartShopping } from "react-icons/fa6"
 import Login from '../Pages/Login'
+import {Link } from 'react-router-dom'
 
 //Menu links for the navigation menu
 const MenuLinks = [
@@ -36,9 +36,11 @@ const Navbar = () => {
 
           {/* Logo and links section */}
           <div className='flex items-center gap-4'>
+            <Link to='/home'>
             <a href="/#" className='text-textColor font-semibold tracking-wider 
             text-3xl uppercase hover:text-hoverColor duration-200'>
               Jersey Sweden</a>
+              </Link>
 
               {/* Menu links */}
               <div >
@@ -59,13 +61,20 @@ const Navbar = () => {
 
               {/* Order button section */}
               <button className='relative p-3'>
-                < FaCartShopping className='text-xl text-textColor hover:text-hoverColor'/>
+               <Link to= '/cart'>
+                < FaCartShopping className='text-xl text-textColor hover:text-hoverColor'/> 
+               </Link> 
                 <div className='add-cart'>0</div>
               </button>
 
               {/*login section*/}
-              <div>
-                <button> <Login/> </button> 
+              <div className='border-2 border-black border-solid rounded-3xl
+                hover:border-sky-500 hover:text-hoverColor'>
+
+               <Link to='/login'>
+                <button className='w-20 h-10 font-semibold cursor:pointer
+                  active:bg-buttonColor active:rounded-3xl'> <Login/> </button>
+                </Link>  
               </div>
 
             </div>
