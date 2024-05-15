@@ -36,20 +36,19 @@ const Navbar = () => {
 
           {/* Logo and links section */}
           <div className='flex items-center gap-4'>
-            <Link to='/home'>
-            <a href="/#" className='text-textColor font-semibold tracking-wider 
-            text-3xl uppercase hover:text-hoverColor duration-200'>
-              Jersey Sweden</a>
-              </Link>
 
+            <Link to="/home" className='text-textColor font-semibold tracking-wider 
+            text-3xl uppercase hover:text-hoverColor duration-200'>
+              Jersey Sweden</Link>
+              
               {/* Menu links */}
               <div >
               <ul className='flex items-center gap-10 px-20'>
                 {MenuLinks.map((data, index)=> (
                   <li key={index}>
-                    <a href={data.link}
+                    <Link to={data.link}
                     className='inline-block font-semibold text-textColor hover:text-hoverColor
-                  duration-200'> {data.name}</a>
+                  duration-200'> {data.name}</Link>
                   </li>
                 ))}
               </ul>  

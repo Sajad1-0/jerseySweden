@@ -1,5 +1,7 @@
 import React from 'react'
 import BackgroundImage from '../Assets/Background-image.jpg'
+
+
 const MainSection = () => {
   return (
     <div>
