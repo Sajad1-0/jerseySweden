@@ -1,8 +1,12 @@
 import React from 'react'
+import { Laliga } from '../Assets/Jersey-sweden/FootballKits'
+
 
 const kits = () => {
   return (
-    <div>kits</div>
+    <div className='bg-primary'>
+      <Laliga/>
+    </div>
   )
 }
 

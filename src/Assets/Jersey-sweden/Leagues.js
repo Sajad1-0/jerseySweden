@@ -3,38 +3,38 @@ const LeaguesLogos = [
     {
         id: 1, 
         name: 'Ligue 1 Uber Eats',
-        link: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862542/Jersey-sweden/Logos/Ligue-1-Logo_fvo2jl.png'
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862542/Jersey-sweden/Logos/Ligue-1-Logo_fvo2jl.png'
     },
     {
         id: 2, 
         name: 'La Liga',
-        link: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862544/Jersey-sweden/Logos/Spanish-La-Liga-Logo_knfb1q.png'
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862544/Jersey-sweden/Logos/Spanish-La-Liga-Logo_knfb1q.png'
     },
     {
         id: 3, 
         name: 'Primier League',
-        link: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862543/Jersey-sweden/Logos/Premier-League-Logo_rty5q3.png'
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862543/Jersey-sweden/Logos/Premier-League-Logo_rty5q3.png'
     },
     {
         id: 4,
         name: 'Serie A',
-        link: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862541/Jersey-sweden/Logos/Italian-Serie-A-Logo_bc7xqt.png'
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862541/Jersey-sweden/Logos/Italian-Serie-A-Logo_bc7xqt.png'
     },
     {
         id: 5,
         name: 'Natinal Teams',
-        link: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862540/Jersey-sweden/Logos/FIFA-Logo-1977-1998_crytcp.png' 
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862540/Jersey-sweden/Logos/FIFA-Logo-1977-1998_crytcp.png' 
     }
 ]
 
 
-const Leagues = () => {
+const Ligor = () => {
   return (
     <div>
-        <ul>
+        <ul className='flex items-center gap-10 px-20'>
             {LeaguesLogos.map((data, index) => (
                 <li key={index}>
-                   <img src= {data.link}></img> {data.name}
+                   <img src= {data.image}></img> {data.name}
                 </li>
             ))}
         </ul>
@@ -42,6 +42,6 @@ const Leagues = () => {
   )
 }
 
-export default Leagues
+export default Ligor
 
 
