@@ -477,7 +477,7 @@ function Laliga() {
             <ul className='flex items-center gap-10 px-10'>
                 {LaligaKits.map((data, index) => (
                     <li key={index}>
-                        <img src={data.image}></img>
+                        <img src={data.image} alt='saca'/>
                         {data.name}
                     </li>
                 ))}
@@ -494,7 +494,7 @@ function PrimierLeague() {
             <ul>
                 {PrimierLeagueKits.map((data, index) => (
                     <li key={index}>
-                        <img src={data.image}></img>
+                        <img src={data.image} alt='saca'/>
                         {data.name}
                     </li>
                 ))}
@@ -511,7 +511,7 @@ function SerieA() {
             <ul>
                 {SeriaAKits.map((data, index) => ( 
                     <li key={index}>
-                        <img src={data.image}></img>
+                        <img src={data.image} alt='fotball'/>
                         {data.name}
                     </li>
                 ))}
