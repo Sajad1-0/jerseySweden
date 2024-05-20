@@ -34,7 +34,8 @@ const Ligor = () => {
         <ul className='flex items-center gap-10 px-20'>
             {LeaguesLogos.map((data, index) => (
                 <li key={index}>
-                   <img src= {data.image}></img> {data.name}
+                   <img src= {data.image} alt='Logo for leagues'/>
+                    {data.name}
                 </li>
             ))}
         </ul>

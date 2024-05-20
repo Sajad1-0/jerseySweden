@@ -1,10 +1,10 @@
-import React from 'react'
-import MainSection from '../Components/MainSection'
+import MainHome from '../Components/MainHome'
 
 const Home = () => {
+
   return (
     <div>
-        <MainSection/>
+        <MainHome/>
     </div>
   )
 }

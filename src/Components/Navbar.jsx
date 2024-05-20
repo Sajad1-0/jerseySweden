@@ -32,18 +32,18 @@ const Navbar = () => {
   return (
     <div className='bg-primary duration-200 realtive z-40'>
       <div className='py-4'>
-        <div className="container flex justify-between items-center gap-4">
+        <div className="container flex justify-between items-center lg:gap-4">
 
           {/* Logo and links section */}
           <div className='flex items-center gap-4'>
 
-            <Link to="/home" className='text-textColor font-semibold tracking-wider 
-            text-3xl uppercase hover:text-hoverColor duration-200'>
+            <Link to="/" className='text-textColor font-semibold lg:tracking-wider 
+            text-2xl lg:text-3xl uppercase hover:text-hoverColor duration-200'>
               Jersey Sweden</Link>
               
               {/* Menu links */}
               <div >
-              <ul className='flex items-center gap-10 px-20'>
+              <ul className='hidden md:flex items-center gap-10 md:px-10 '>
                 {MenuLinks.map((data, index)=> (
                   <li key={index}>
                     <Link to={data.link}
@@ -67,7 +67,7 @@ const Navbar = () => {
               </button>
 
               {/*login section*/}
-              <div className='border-2 border-black border-solid rounded-3xl
+              <div className='hidden md:block border-2 border-black border-solid rounded-3xl
                 hover:border-sky-500 hover:text-hoverColor'>
 
                <Link to='/login'>

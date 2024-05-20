@@ -477,7 +477,7 @@ function Laliga() {
             <ul className='flex items-center gap-10 px-10'>
                 {LaligaKits.map((data, index) => (
                     <li key={index}>
-                        <img src={data.image} alt='saca'/>
+                        <img src={data.image} alt='Laliga teams kits'/>
                         {data.name}
                     </li>
                 ))}
@@ -494,7 +494,8 @@ function PrimierLeague() {
             <ul>
                 {PrimierLeagueKits.map((data, index) => (
                     <li key={index}>
-                        <img src={data.image} alt='saca'/>
+                        <img src={data.image} alt='
+                        Premier League teams kits'/>
                         {data.name}
                     </li>
                 ))}
@@ -511,7 +512,8 @@ function SerieA() {
             <ul>
                 {SeriaAKits.map((data, index) => ( 
                     <li key={index}>
-                        <img src={data.image} alt='fotball'/>
+                        <img src={data.image} alt='
+                        Seria A teams kits'/>
                         {data.name}
                     </li>
                 ))}
@@ -529,7 +531,7 @@ function OtherLeagues() {
             <ul>
                 {otherLeaguesKits.map((data, index) => (
                     <li key={index}>
-                        <img src={data.image}></img>
+                        <img src={data.image} alt='Other leagues kits'/>
                         {data.name}
                     </li>
                 ))}
@@ -546,7 +548,7 @@ function NationalTeams() {
             <ul>
                 {InternationalKits.map((data, index) => (
                     <li key={index}>
-                        <img src={data.image}></img>
+                        <img src={data.image} alt='National teams kits'/>
                         {data.name}
                     </li>
                 ))}
