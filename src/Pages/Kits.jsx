@@ -1,11 +1,12 @@
 import React from 'react'
-import { Laliga } from '../Assets/Jersey-sweden/FootballKits'
+import LaLiga from '../Components/Ligor/Laliga'
+
 
 
 const kits = () => {
   return (
     <div className='bg-primary'>
-      <Laliga/>
+      <LaLiga/>
     </div>
   )
 }
