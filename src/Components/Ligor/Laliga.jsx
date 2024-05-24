@@ -1,5 +1,5 @@
 import React from 'react'
-import  {LaligaKits}  from '../Assets/Jersey-sweden/FootballKits'
+import  {LaligaKits}  from '../../Assets/Jersey-sweden/FootballKits'
 
 // Component for la lagia kits
 const LaLiga = () => {

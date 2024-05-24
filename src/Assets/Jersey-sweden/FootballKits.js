@@ -1,9 +1,6 @@
-import React from 'react';
-
-
 
 // Laliga Kits
-const LaligaKits = [ 
+export const LaligaKits = [ 
     {
         id: 1,
         name: 'Atletico Madrid home kit 2020',
@@ -67,7 +64,7 @@ const LaligaKits = [
 ]
 
 // Primier League Kits
-const PrimierLeagueKits =  [
+export const PrimierLeagueKits =  [
     {
         id: 1,
         name: 'Arsenal home kit 2023',
@@ -211,7 +208,7 @@ const PrimierLeagueKits =  [
 
 
 // Serie A league kits
-const SeriaAKits = [
+export const SeriaAKits = [
     {
         id: 1,
         name: 'AC Milan away kit',
@@ -301,7 +298,7 @@ const SeriaAKits = [
 
 
 // Other ligues kits 
-const otherLeaguesKits = [
+export const otherLeaguesKits = [
     {
         id: 1,
         name: 'Bayern munich homekit',
@@ -406,7 +403,7 @@ const otherLeaguesKits = [
 
 // International kits
 
-const InternationalKits = [
+export const InternationalKits = [
     {
         id: 1,
         name: 'Argentina home kit classic',
@@ -554,75 +551,3 @@ const InternationalKits = [
 
 ]
 
-// Component for Primier League
-function PrimierLeague() {
-    
-    return (
-        <div>
-            <ul>
-                {PrimierLeagueKits.map((data, index) => (
-                    <li key={index}>
-                        <img src={data.image} alt='
-                        Premier League teams kits'/>
-                        {data.name}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
-
-// Component for Serie A 
-function SerieA() {
-
-    return (
-        <div>
-            <ul>
-                {SeriaAKits.map((data, index) => ( 
-                    <li key={index}>
-                        <img src={data.image} alt='
-                        Seria A teams kits'/>
-                        {data.name}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
-
-//Component for other Leagues kits
-
-function OtherLeagues() {
-    
-    return (
-        <div>
-            <ul>
-                {otherLeaguesKits.map((data, index) => (
-                    <li key={index}>
-                        <img src={data.image} alt='Other leagues kits'/>
-                        {data.name}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
-
-// Components National teams kits
-function NationalTeams() {
-
-    return (
-        <div>
-            <ul>
-                {InternationalKits.map((data, index) => (
-                    <li key={index}>
-                        <img src={data.image} alt='National teams kits'/>
-                        {data.name}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
-
-export {LaligaKits}
