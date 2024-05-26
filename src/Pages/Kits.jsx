@@ -9,7 +9,7 @@ import {useParams} from 'react-router-dom'
 const Kits = () => {
   const {id} = useParams();
   return (
-    <div className='bg-primary flex items-center justify-center gap-10'>
+    <div className='bg-primary'>
       {(id === '1' || !id) && <LaLiga/>}
       {(id === '2' || !id )&& <PrimierLeague/>}
       {(id === '3' || !id ) && <SeriaA/>}

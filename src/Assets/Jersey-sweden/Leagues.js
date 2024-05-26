@@ -36,12 +36,16 @@ const Ligor = () => {
     const navigate = useNavigate();
   return (
     <div>
-        <ul className='flex items-center gap-10 px-20'>
+        <ul className='flex flex-wrap items-center justify-center gap-6 px-20'>
             {LeaguesLogos.map((data, index) => (
-                <li key={index}>
+                <li key={index} className='m-4 p-12 border-b border-textColor rounded-lg
+                hover:border-b hover:border-hoverColor duration-200 cursor-pointer hover:scale-105 hover:shadow-2xl'
+                
+                >
                 <button onClick={() => navigate(`/kits/${data.id}`)}>
-                   <img src= {data.image} alt='Logo for leagues'/>
-                    <p>{data.name}</p>
+                   <img src= {data.image} alt='Logo for leagues'
+                   className='w-[400px] md:w-[500px]'/>
+                    <p className='text-center font-bolder'>{data.name}</p>
                     </button>
                 </li>
             ))}
