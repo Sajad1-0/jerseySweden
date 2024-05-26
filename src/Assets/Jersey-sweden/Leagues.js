@@ -27,7 +27,7 @@ const LeaguesLogos = [
     {
         id: 5,
         name: 'other leagues',
-        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1716558930/otherleagues_ulpanz.png',
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1716726745/Jersey-sweden/Logos/obikfulmck6ekjkrfjvk.png',
     }
 ]
 

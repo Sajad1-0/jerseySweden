@@ -10,11 +10,11 @@ const Kits = () => {
   const {id} = useParams();
   return (
     <div className='bg-primary flex items-center justify-center gap-10'>
-      {(id === 1 || !id) && <LaLiga/>}
-      {(id === 2 || !id )&& <PrimierLeague/>}
-      {(id === 3 || !id ) && <SeriaA/>}
-     {(id === 5 || !id)&& <OtherLeagues/>} 
-     {(id === 4 || !id) && <NationalTeams/>}
+      {(id === '1' || !id) && <LaLiga/>}
+      {(id === '2' || !id )&& <PrimierLeague/>}
+      {(id === '3' || !id ) && <SeriaA/>}
+     {(id === '5' || !id)&& <OtherLeagues/>} 
+     {(id === '4' || !id) && <NationalTeams/>}
     </div>
   )
 }
