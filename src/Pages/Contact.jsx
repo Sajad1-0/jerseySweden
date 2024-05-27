@@ -5,18 +5,20 @@ import { PiTiktokLogo } from "react-icons/pi";
 import { MdOutlineMail } from "react-icons/md";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import SendingEmail from '../Components/SendingEmail';
 
 const Contact = () => {
   return (
-    <div className='bg-primary flex flex-wrap'>
-      <div className='border-2 mx-4 p-2'>
-        {/* social Media icons */}
-        <h1 className='text-lg font-semibold text-center py-4 md:w-[500px]'
-        >Make sure to visite our social Medies for more service and incoming kits</h1>
+    <div className='bg-primary flex flex-wrap flex-col'>
+     <div className='flex flex-wrap justify-center gap-4'>
+       <div className='border-2 mx-4 p-2 w-[400px] md:w-[600px]'>
+         {/* social Media icons */}
+         <h1 className='text-lg font-semibold text-center py-4 md:w-[400px]'
+         >Make sure to visite our social Medies for more service and incoming kits</h1>
 
-        <ul className='flex m-2'>
-        <p className='text-md font-semibold'>Follow us on:</p>
-          <li className='flex mx-2 px-4'>
+         <ul className='flex m-2'>
+         <p className='text-md font-semibold'>Follow us on:</p>
+           <li className='flex mx-2 px-4'>
             <Link to="https://www.instagram.com/fs.jerseys/">
               <SlSocialInstagram className='mr-2 text-2xl hover:text-hoverColor duration-200'/>
               </Link>
@@ -26,9 +28,10 @@ const Contact = () => {
               </li>
 
           </ul>
+
           {/* link to Email and phone number */}
           <ul className='flex my-4 mx-2'>
-          <p className='text-md font-semibold'>Or Contact us at:</p>
+           <p className='text-md font-semibold'>Or Contact us at:</p>
             <li className='flex mx-2 px-4'>
               <Link to='mailto:someone@example.com'>
               <MdOutlineMail className='mx-2 text-2xl hover:text-hoverColor duration-200' /> 
@@ -38,10 +41,12 @@ const Contact = () => {
               </Link>
             </li>
           </ul> 
-      </div>
-      <div>
+       </div>
+       <div >
         {/* form for sending email to owners */}
-      </div>
+        <SendingEmail/>
+       </div>
+     </div>
       <div>
      <IncomingProducts/> 
       </div>

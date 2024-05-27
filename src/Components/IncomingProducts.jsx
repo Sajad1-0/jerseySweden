@@ -3,7 +3,7 @@ import React from 'react'
 const IncomingProducts = () => {
   return (
     <div className='flex flex-col items-center justify-center 
-    gap-8 m-auto mx-10 p-[100px] bg-stone-950 text-primary'>
+    gap-8 m-auto p-[100px] bg-stone-950 text-primary'>
 
         <h1 className='text-3xl md:text-5xl font-semibold text-center  '
         >Get Exclusive offers on Your Email</h1>
