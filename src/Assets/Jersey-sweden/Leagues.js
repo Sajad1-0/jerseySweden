@@ -26,7 +26,7 @@ const LeaguesLogos = [
     },
     {
         id: 5,
-        name: 'other leagues',
+        name: 'Other leagues',
         image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1716726745/Jersey-sweden/Logos/obikfulmck6ekjkrfjvk.png',
     }
 ]
@@ -45,7 +45,8 @@ const Ligor = () => {
                 <button onClick={() => navigate(`/kits/${data.id}`)}>
                    <img src= {data.image} alt='Logo for leagues'
                    className='w-[400px] md:w-[500px]'/>
-                    <p className='text-center font-bolder'>{data.name}</p>
+                    <p className='text-center text-2xl font-semibold py-2'>
+                        {data.name}</p>
                     </button>
                 </li>
             ))}
