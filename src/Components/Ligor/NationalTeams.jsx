@@ -1,5 +1,6 @@
 import React from 'react'
 import { InternationalKits } from '../../Assets/Jersey-sweden/FootballKits'
+import { Link } from 'react-router-dom'
 const NationalTeams = () => {
   return (
     <div>
@@ -12,8 +13,10 @@ const NationalTeams = () => {
                 hover:border-b-2 hover:border-hoverColor duration-200 cursor-pointer
                 hover:scale-105 hover:shadow-2xl'
                 >
-                   <img src={data.image} alt="National kits"
-                   className='w-[200px] lg:w-[360px] ' /> 
+                  <Link to={`/product/${data.id}`}>
+                    <img src={data.image} alt="National kits"
+                   className='w-[200px] lg:w-[360px] ' /> </Link>
+                   
                    <p className='text-center font-semibold'>{data.name}</p>
                    <p className='text-center'>{data.price}kr</p>
                 </li>
