@@ -21,13 +21,14 @@ const LeaguesLogos = [
     },
     {
         id: 4,
-        name: 'Natinal Teams',
-        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862540/Jersey-sweden/Logos/FIFA-Logo-1977-1998_crytcp.png',
+        name: 'Other Leagues',
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1716726745/Jersey-sweden/Logos/obikfulmck6ekjkrfjvk.png',
     },
     {
         id: 5,
-        name: 'Other leagues',
-        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1716726745/Jersey-sweden/Logos/obikfulmck6ekjkrfjvk.png',
+        name: 'National Teams',
+        image: 'https://res.cloudinary.com/dv9izlvzw/image/upload/v1715862540/Jersey-sweden/Logos/FIFA-Logo-1977-1998_crytcp.png',
+       
     }
 ]
 

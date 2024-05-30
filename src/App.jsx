@@ -11,7 +11,7 @@ import Product from './Pages/Product.jsx'
 
 const App = () => {
   return (
-    <div>
+    <div className='bg-primary'>
       <BrowserRouter>
       {/* Navvigation links include all pages in website */}
       <Navbar/>
@@ -23,6 +23,7 @@ const App = () => {
         <Route path='/leagues' element={<Leagues/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/product/:productId' element={<Product/>}/>
+        <Route path='/kits/:id/product/:productId' element={<Product/>}/>
         <Route path='/cart' element={<Cart/>} />
         <Route path='/login' element={<Login/>} />
       </Routes>

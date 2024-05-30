@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaCartShopping } from "react-icons/fa6"
-import Login from '../Pages/Login'
 import {Link } from 'react-router-dom'
 
 //Menu links for the navigation menu

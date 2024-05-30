@@ -13,8 +13,8 @@ const Kits = () => {
       {(id === '1' || !id) && <LaLiga/>}
       {(id === '2' || !id )&& <PrimierLeague/>}
       {(id === '3' || !id ) && <SeriaA/>}
-     {(id === '5' || !id)&& <OtherLeagues/>} 
-     {(id === '4' || !id) && <NationalTeams/>}
+     {(id === '4' || !id)&& <OtherLeagues/>} 
+     {(id === '5' || !id) && <NationalTeams/>}
     </div>
   )
 }
