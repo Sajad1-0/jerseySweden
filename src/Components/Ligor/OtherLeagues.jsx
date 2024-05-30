@@ -12,7 +12,7 @@ const OtherLeagues = () => {
                 hover:border-b-2 hover:border-hoverColor duration-200
                 hover:scale-105 hover:shadow-2xl cursor-pointer'
                 >
-                  <Link to={`/product/${data.id}`} >
+                  <Link to={`/kits/2/product/${data.id}`} >
                     <img src={data.image} alt="Other Leagues kits" 
                     className='w-[200px] lg:w-[360px] '/> 
                   </Link>

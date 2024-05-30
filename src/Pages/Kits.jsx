@@ -7,7 +7,9 @@ import NationalTeams from '../Components/Ligor/NationalTeams'
 import {useParams} from 'react-router-dom'
 
 const Kits = () => {
+  
   const {id} = useParams();
+  console.log('Kits componentID: ', id);
   return (
     <div className='bg-primary'>
       {(id === '1' || !id) && <LaLiga/>}

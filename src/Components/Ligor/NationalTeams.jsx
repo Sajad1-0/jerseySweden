@@ -17,7 +17,7 @@ const NationalTeams = () => {
                 hover:border-b-2 hover:border-hoverColor duration-200 cursor-pointer
                 hover:scale-105 hover:shadow-2xl'
                 >
-                  <Link to={`/product/${data.id}`}>
+                  <Link to={`/kits/2/product/${data.id}`}>
                     <img src={data.image} alt="National Kits" 
                     className='w-[200px] lg:w-[360px]'/>
                  </Link>
