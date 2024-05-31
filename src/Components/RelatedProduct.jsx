@@ -1,47 +1,37 @@
 import React, {useEffect, useState} from 'react'
 import { Link, useParams } from 'react-router-dom';
-import LaLiga from './Ligor/Laliga';
-import PrimierLeague from './Ligor/PrimierLeague';
-import SeriaA from './Ligor/SeriaA';
-import OtherLeagues from './Ligor/OtherLeagues';
-import NationalTeams from './Ligor/NationalTeams';
+import { LaligaKits } from '../Assets/Jersey-sweden/FootballKits';
+import { PrimierLeagueKits } from '../Assets/Jersey-sweden/FootballKits';
+import { SeriaAKits } from '../Assets/Jersey-sweden/FootballKits';
+import { otherLeaguesKits } from '../Assets/Jersey-sweden/FootballKits';
+import { InternationalKits } from '../Assets/Jersey-sweden/FootballKits';
 
-const allKits = [LaLiga, PrimierLeague, SeriaA, OtherLeagues, NationalTeams];
+
+const allKits = [...LaligaKits, ...PrimierLeagueKits, ...SeriaAKits, ...otherLeaguesKits,
+     ...InternationalKits];
+    
+
 
 const RelatedProduct = () => {
+     const {productId} = useParams();
+    
+
+    const [relatedKits, setRelatedKits] = useState([])
+       
+   useEffect(() => {
+    const currentKit = allKits.find(data => data.id === Number(productId));
+
+    if (currentKit) {
+        const relatedKits = allKits.filter(data => data.league === currentKit.league &&
+            data.id !== currentKit.id).sort(() => 0.5 - Math.random()) // randomly sort the filtered kits
+            .slice(0,5); // take the first 5 kits
+            setRelatedKits(relatedKits);
+    }
+   }, [productId])
+
     
     
-    const {productId} = useParams();
 
-    const [relatedKits, setRelatedKits] = useState([]);
-
-    useEffect( () => {
-        console.log("productId:", typeof productId);
-        if (allKits && productId) {
-
-            const id = Number(productId);
-            console.log("id:", id);
-
-            // Every kit has a related league 
-            const relatedKits = allKits.find( data => data.id === id)?.league;
-            console.log("relatedKits:", relatedKits);
-
-            if(relatedKits) {
-
-            
-                // Filter kits that belong to the same league as related kit
-                const filterKits = allKits.filter(data => data.id === relatedKits && data.id !== id);
-                console.log("filterKits:", filterKits);
-                // Bring only first ten kits
-                const firstTenKits = filterKits.slice(0, 10);
-                console.log("firstTenKits:", firstTenKits);
-
-                setRelatedKits(firstTenKits);
-            } else {
-                setRelatedKits([]);
-            }
-        }
-    },[productId]);
   return (
     <div>
        <h1>Related Products!</h1>
@@ -51,8 +41,8 @@ const RelatedProduct = () => {
            <ul>
             {relatedKits.map((data, index) => (
                 <li key={index}>
-                <Link to={`/product/${data.id}`}>
-                    <img src={data.image} alt={data.name}  className=''/>
+                <Link to={`/kits/2/product/${data.id}`}>
+                    <img src={data.image} alt={data.name}  className='p-2'/>
                 </Link>
                 <p>{data.name}</p>
                 <p>{data.price}kr</p>
