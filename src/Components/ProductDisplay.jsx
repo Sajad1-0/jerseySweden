@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext}from 'react'
 import StarFull from '../Assets/Star-full.png'
 import HalfStar from '../Assets/Star Half Full.png'
+import {JerseyContext} from '../Context/JerseyContext'
 
 const ProductDisplay = ({product}) => {
 
+  // importing addTocart function from JerseyContext
+  const {addToCart} = useContext(JerseyContext);
   // const {product} = props;
   if (!product) return <div>Product not found</div> 
   
@@ -82,7 +85,8 @@ const ProductDisplay = ({product}) => {
             active:bg-textColor active:text-primary rounded-md'>XXl</div>
           </div>
         </div>
-        <button className='w-[170px] my-4 mx-2 bg-hoverColor rounded-2xl py-4 px-8
+        <button onClick={() => {addToCart(product.id)}}
+        className='w-[170px] my-4 mx-2 bg-hoverColor rounded-2xl py-4 px-8
         font-semibold hover:shadow-md hover:shadow-textColor active:text-primary'>
         ADD TO CART</button>
         <p className='mt-2 font-medium'>

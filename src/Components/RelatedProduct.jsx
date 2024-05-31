@@ -33,19 +33,20 @@ const RelatedProduct = () => {
     
 
   return (
-    <div>
-       <h1>Related Products!</h1>
-       <hr />
+    <div className='flex flex-col items-center gap-4 '>
+       <h1 className='text-xl font-semibold'>Related Products!</h1>
+       <hr  className='w-[200px] border border-textColor'/>
        {/* Related products kits */}
-       <div>
-           <ul>
+       <div className='flex mt-4 gap-4'>
+           <ul className='flex flex-wrap items-center justify-center gap-4 m-8'>
             {relatedKits.map((data, index) => (
-                <li key={index}>
+                <li key={index} onClick={window.scrollTo(0,0)}
+                className='border-b border-textColor rounded-md hover:scale-110 duration-300'>
                 <Link to={`/kits/2/product/${data.id}`}>
-                    <img src={data.image} alt={data.name}  className='p-2'/>
+                    <img src={data.image} alt={data.name} className='w-[150px] md:[550px] m-auto pb-4 duration-200' />
                 </Link>
-                <p>{data.name}</p>
-                <p>{data.price}kr</p>
+                <p className='w-[200px] text-center pb-4'>{data.name}</p>
+                <p className='text-center pb-2'>{data.price}kr</p>
                 </li>
                 
             ))}
