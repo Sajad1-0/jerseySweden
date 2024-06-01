@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext }from 'react'
 import { InternationalKits } from '../../Assets/Jersey-sweden/FootballKits'
 import { Link } from 'react-router-dom'
+import { TbShoppingBagPlus } from "react-icons/tb";
+import { JerseyContext } from '../../Context/JerseyContext';
+
 
 //Component for national teams
 const NationalTeams = () => {
-  console.log('National Teams: ', InternationalKits);
+ 
+  const {addToCart, } = useContext(JerseyContext);
   
   return (
     <div>
@@ -25,6 +29,10 @@ const NationalTeams = () => {
                    
                    <p className='text-center font-semibold'>{data.name}</p>
                    <p className='text-center'>{data.price}kr</p>
+                   <div className='flex justify-end'>
+              <TbShoppingBagPlus onClick={() => addToCart(data.id)}
+               className='text-4xl active:text-hoverColor'/>
+            </div>
                 </li>
             ))}
         </ul>

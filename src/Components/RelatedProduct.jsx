@@ -32,7 +32,8 @@ const RelatedProduct = () => {
     
     
 
-  return (
+ 
+   return (
     <div className='flex flex-col items-center gap-4 '>
        <h1 className='text-xl font-semibold'>Related Products!</h1>
        <hr  className='w-[200px] border border-textColor'/>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { PrimierLeagueKits } from '../../Assets/Jersey-sweden/FootballKits'
 import { Link } from 'react-router-dom'
-
+import { JerseyContext } from '../../Context/JerseyContext'
+import { TbShoppingBagPlus } from "react-icons/tb";
 const PrimierLeague = () => {
+
+  const {addToCart} = useContext(JerseyContext)
   return (
     <div>
         <ul
@@ -20,6 +23,10 @@ const PrimierLeague = () => {
                     
                    <p className='text-center font-semibold'>{data.name}</p>
                    <p className='text-center'>{data.price}kr</p>
+                   <div className='flex justify-end'>
+                    <TbShoppingBagPlus onClick={() => addToCart(data.id)}
+                    className='text-4xl active:text-hoverColor'/>
+                    </div>
                 </li>
             ))}
         </ul>
