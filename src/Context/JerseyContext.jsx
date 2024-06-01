@@ -26,7 +26,7 @@ const JerseyContextProvider = (props) => {
     // function for adding kits to cart 
     const addToCart = (productId) => {
         setCartProducts((prev) => ({...prev, [productId]: prev[productId] + 1 }))
-        console.log(cartProducts);
+        
     }
     // function for removing kits from cart
     const removeFromCart = (productId) => {

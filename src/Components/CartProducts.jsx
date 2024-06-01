@@ -2,12 +2,22 @@ import React, {useContext} from 'react'
 import { JerseyContext } from '../Context/JerseyContext'
 import { CgRemove } from "react-icons/cg";
 import { MdAddCircleOutline } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
+
 
 const CartProducts = () => {
     // Import allKits, getCart removeFromCart from JerseyContext
     const {allKits, cartProducts, 
         removeFromCart, addToCart } = useContext(JerseyContext);
+
+    // Navigate to Checkout page if these is a product in cartproduct page
+    const navigate = useNavigate();
+    const NavigateToCheckout = () => {
+        if(cartItems.length > 0) {
+            navigate('/checkout', {state: {cartItems, totalPrice}});
+        }
+    }
+
 
     // function for total price of different products
     const totalPrice = allKits.reduce((total, kit) => {
@@ -16,7 +26,11 @@ const CartProducts = () => {
     }, 0)
 
     //Filter all kits to get only products that are in the cart
-    const cartItems = allKits.filter(kit => cartProducts[kit.id] > 0);
+    const cartItems = allKits.filter(kit => cartProducts[kit.id] > 0)
+    .map(kit =>( {
+        ...kit,
+        quantity: cartProducts[kit.id]
+    }));
 
 
   return (
@@ -77,7 +91,8 @@ const CartProducts = () => {
                 <hr className='border border-stone-500 mb-12'/>
                 {/* Button to go to payment section */}
                 <div>
-                    <button className='w-[170px] my-4 bg-hoverColor rounded-2xl py-4 px-8
+                    <button onClick={NavigateToCheckout}
+                     className='w-[170px] my-4 bg-hoverColor rounded-2xl py-4 px-8
                     font-semibold hover:shadow-md hover:shadow-textColor active:text-primary'>TO CHECKOUT</button>
                 </div>
             </div>

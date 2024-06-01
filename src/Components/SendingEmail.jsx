@@ -7,7 +7,7 @@ const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [message, setMessage] = useState('');
 
-const handleSubmit = async (e) => {
+const handleSubmit =  (e) => {
     e.preventDefault();
 
     // Owners EmailJs service ID, template ID, and public key
