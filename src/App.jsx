@@ -9,6 +9,7 @@ import Login from './Pages/Login.jsx'
 import Home from './Pages/Home.jsx' 
 import Product from './Pages/Product.jsx'
 import Checkout from './Pages/Checkout.jsx'
+import ShopConfirmation from './Pages/ShopConfirmation.jsx'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/kits/:id/product/:productId' element={<Product/>}/>
         <Route path='/cart' element={<Cart/>} />
         <Route path='/checkout' element={<Checkout/>} />
+        <Route path='/confirmation' element={<ShopConfirmation/>} />
         <Route path='/login' element={<Login/>} />
       </Routes>
 
