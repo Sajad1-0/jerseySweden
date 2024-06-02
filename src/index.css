@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-color: '#EEEEEE';
+}
+
 @layer Components {
     .add-cart {
         @apply w-4 h-4 bg-red-500 text-white rounded-full
