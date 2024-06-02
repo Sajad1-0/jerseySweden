@@ -5,24 +5,25 @@ const ShopConfirmation = () => {
 
     const location = useLocation();
 
-    const {cartItems, totalPrice, name, adress} = location.state || {cartItems: [], totalPrice: 0,
+    const {cartItems, totalPrice, name, streetAndHouseNumber, postalCode, city, country} = location.state || {cartItems: [], totalPrice: 0,
          name: '', adress: ''};
 
   return (
-    <div>
-        <div>
+    <div className='flex flex-col justify-center gap-8'>
+        <div className='mt-8 w-[600]'>
             {/* Payment confirmation */}
             <div>
-                <h1>PAYMENT CONFIRMATION</h1>
+                <h1 className='text-xl font-bold text-center mb-4'>PAYMENT CONFIRMATION</h1>
             </div>
+            <hr className='border border-stone-500'/>
             {/* Customer's Name */}
-            <div>
-                <h2>Thank You {name}!</h2>
-                <p>Your payment has been confirmed. Here are the details of your purchase:</p>
+            <div className='mt-8'>
+                <h2 className='font-semibold text-lg text-center'>Thank You {name}!</h2>
+                <p className='font-medium text-md text-center mt-1'>Your payment has been confirmed. Here are the details of your purchase:</p>
             </div>
             {/* Products */}
-            <div className='mb-4'>
-                <h3 className='text-lg font-semibold mb-2'>Products:</h3>
+            <div className='mb-4 mx-4'>
+                <h3 className='text-lg font-medium mb-2'>Products:</h3>
                 {cartItems.length > 0 ? (
                     <div className='flex flex-col gap-4'>
                     {cartItems.map((item) => (
@@ -39,17 +40,22 @@ const ShopConfirmation = () => {
                 <p>No items in the cart.</p>
                 )}
             </div>
-
+            
                 {/* Shipping section and total price */}
-             <div>
+             <div className='flex justify-between gap-4 mx-4 my-4'>
                 <h1>Total Price:</h1>
-                <p>{totalPrice}</p>
+                <p>{totalPrice}kr</p>
             </div>
-            <div>
+            <div className='flex justify-between gap-4 mx-4'>
                 <h1>Shipping Adress:</h1>
-                <p>{adress}</p>
+                <div className='flex flex-col'>
+                <p>{country}</p>
+                <p>{city}</p>
+                <p>{postalCode}</p>
+                <p>{streetAndHouseNumber}</p>
+                </div>
             </div>
-                <p>Your order will be shipped to the adress provided.</p>
+                <p className='text-center mt-2'>Your order will be shipped to the adress provided.</p>
         </div>
     </div>
   )

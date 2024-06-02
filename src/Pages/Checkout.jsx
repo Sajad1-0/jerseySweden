@@ -23,18 +23,23 @@ const Checkout = () => {
     const [postalCode, setPostalCode] = useState('');
     const [streetAndHouseNumber, setStreetAndHouseNumber] = useState('');
     const [email, setEmail] = useState('');
-    const [adress, setAdress] = useState('');
+    const [address, setAddress] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const shippingAddress = `${country}, ${city}, ${postalCode}, ${streetAndHouseNumber}`;
+    
 
         navigate('/confirmation', {
             state: {
                 cartItems,
                 totalPrice,
                 name,
-                address: shippingAddress,
+                address,
+                country,
+                city,
+                postalCode,
+                streetAndHouseNumber,
+
             }
         });
 
@@ -101,7 +106,7 @@ const Checkout = () => {
                 focus:shadow-md'/>
             </label>
             <label for='adress' className='font-semibold'> 
-                <p className='ml-4 my-10 text-2xl' value={adress} onChange={(e) => setAdress(e.target.value)}>Adress</p>
+                <p className='ml-4 my-10 text-2xl' value={address} onChange={(e) => setAddress(e.target.value)}>Adress</p>
                 <div className='flex flex-col gap-8'>
                 <input type="text" id='country' placeholder='COUNTRY' value={country} onChange={(e) => setCountry(e.target.value)} readquired
                  className='ml-4 p-2 w-[300px] lg:w-1/2 border border-stone-500 rounded-lg outline-none focus:shadow-hoverColor

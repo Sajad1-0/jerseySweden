@@ -33,8 +33,12 @@ const JerseyContextProvider = (props) => {
         setCartProducts((prev) => ({...prev, [productId]: prev[productId] - 1 }))
     }
 
+    const clearCart = (productId) => {
+        setCartProducts((prev) => ({...prev, [productId]: prev[productId] = 0 }))
+    }
+
     // create a context value that holds all kits
-    const contextValue = {allKits, cartProducts, addToCart, removeFromCart };
+    const contextValue = {allKits, cartProducts, addToCart, removeFromCart, clearCart };
 
     
 

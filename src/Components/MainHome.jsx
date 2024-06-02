@@ -21,14 +21,12 @@ const MainHome = () => {
         top-20 mx-auto '>
             <h1 className='uppercase font-semibold text-md md:text-lg 
             lg:text-3xl lg:font-bold text-primary text-center'
-            >Utforska de fina fotbollströjor</h1>
+            >Explore the best football jerseys</h1>
 
             <p className='text-sm md:text-md md:font-semibold text-primary text-center
             '
-            >Idag kan vi med stolthet levererar hög kvalitiva fotbollströjor med 
-                jättelåga priser. Du kan hitta din favorits lag tröja hos oss på
-                bästa priset . Vi på Jersey Sweden strävar alltid efter bättre 
-                service för våra kunder 
+            > Today, we proudly deliver high-quality football jerseys at incredibly low prices. You can find your favorite team's 
+            jersey with us at the best price. At Jersey Sweden, we always strive for better service for our customers.
             </p>
 
             {/* Button to navigate to kits */}
@@ -38,7 +36,7 @@ const MainHome = () => {
                 font-semibold md:py-2.5 md:px-8 md:tracking-wider text-textColor 
                 hover:tracking-widest hover:bg-primary hover:text-hoverColor
                 active:text-textColor active:bg-buttonColor'
-                >Utforska</button>
+                >EXPLORE</button>
             </div>
         </div>
 
