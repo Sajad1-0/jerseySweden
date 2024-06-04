@@ -1,4 +1,5 @@
-import React,{ createContext, useContext ,useReducer } from 'react'
+import React,{ createContext, useContext ,useEffect,useReducer } from 'react'
+import { useLocalStorage } from '../Hook/useLocalStorage';
 
 // Create the context for cart 
 const CartContext = createContext();
@@ -28,9 +29,25 @@ const cartReducer = (state, action) => {
 export const CartProvider = ({children}) => {
 
     const [state, dispatch] = useReducer(cartReducer, initialState);
+    const [cart, setCart] = useLocalStorage('cart', initialState);
+
+    // sync local storage with state
+    useEffect(() => {
+        setCart(state);
+    }, [state, setCart]);
+
+    //Initial state from local storage
+    useEffect(() => {
+        dispatch({ type: 'LOAD_CART', payload: cart });
+    }, []);
+
+    const clearCart = () => {
+        dispatch({ type: 'CLEAR_CART' });
+        localStorage.removeItem('cart');
+    }
 
     return (
-        <CartContext.Provider value={{state, dispatch}}>
+        <CartContext.Provider value={{state, dispatch, clearCart}}>
             {children}
         </CartContext.Provider>
     )

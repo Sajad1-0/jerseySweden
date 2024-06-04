@@ -1,6 +1,7 @@
-import React, {createContext, useState} from 'react'
+import React, {createContext} from 'react'
 import  {LaligaKits, PrimierLeagueKits, 
 SeriaAKits,  otherLeaguesKits, InternationalKits} from '../Assets/Jersey-sweden/FootballKits'  
+import { useLocalStorage } from '../Hook/useLocalStorage';
 
 
 const allKits = [...LaligaKits, ...PrimierLeagueKits, ...SeriaAKits, ...otherLeaguesKits,
@@ -22,7 +23,7 @@ const getCart = () => {
 // Creating a function for context provider
 const JerseyContextProvider = (props) => {
 
-    const [cartProducts, setCartProducts] = useState(getCart());
+    const [cartProducts, setCartProducts] = useLocalStorage('cartProducts' ,getCart());
     // function for adding kits to cart 
     const addToCart = (productId) => {
         setCartProducts((prev) => ({...prev, [productId]: prev[productId] + 1 }))

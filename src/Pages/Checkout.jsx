@@ -13,7 +13,7 @@ import { useCart } from '../Context/CartContext';
 const Checkout = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { state: cartState, dispatch } = useCart();
+    const { state, dispatch, clearCart } = useCart();
     const { cartItems = [], totalPrice = 0 } = location.state || {};
     
     
@@ -24,6 +24,12 @@ const Checkout = () => {
     const [streetAndHouseNumber, setStreetAndHouseNumber] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
+
+
+    // handle click for removing items from the cart 
+    const handlePay = () => {
+        clearCart();
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -124,7 +130,8 @@ const Checkout = () => {
                 </div>
             </label>
             <div className='flex'>
-            <button type='submit' className='w-[200px] mb-10 mx-4 bg-hoverColor rounded-2xl py-2
+            <button type='submit' onClick={() => handlePay()}
+            className='w-[200px] mb-10 mx-4 bg-hoverColor rounded-2xl py-2
             font-semibold hover:shadow-md hover:shadow-textColor active:text-primary'>
                 PAY</button>
             </div>
