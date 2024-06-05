@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import {useLocation} from 'react-router-dom'
 import Swish from '../Assets/Swish Logo Primary PNG.png'
 import { FaCcVisa } from "react-icons/fa6";
@@ -7,13 +7,14 @@ import { SiAmericanexpress } from "react-icons/si";
 import { FaCcPaypal } from "react-icons/fa";
 import { RiBillFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
-import { useCart } from '../Context/CartContext';
+import { JerseyContext } from '../Context/JerseyContext';
+
 
 
 const Checkout = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { state, dispatch, clearCart } = useCart();
+    const { clearCart } = useContext(JerseyContext);
     const { cartItems = [], totalPrice = 0 } = location.state || {};
     
     
@@ -28,9 +29,10 @@ const Checkout = () => {
 
     // handle click for removing items from the cart 
     const handlePay = () => {
+        console.log('hej');
         clearCart();
     }
-
+    // Submit function for form 
     const handleSubmit = (e) => {
         e.preventDefault();
     
@@ -49,7 +51,6 @@ const Checkout = () => {
             }
         });
 
-        dispatch({ type: 'CLEAR_CART' });
     };
 
     

@@ -23,7 +23,7 @@ const getCart = () => {
 // Creating a function for context provider
 const JerseyContextProvider = (props) => {
 
-    const [cartProducts, setCartProducts] = useLocalStorage('cartProducts' ,getCart());
+    const [cartProducts, setCartProducts, clearProducts] = useLocalStorage('cartProducts' ,getCart());
     // function for adding kits to cart 
     const addToCart = (productId) => {
         setCartProducts((prev) => ({...prev, [productId]: prev[productId] + 1 }))
@@ -35,6 +35,7 @@ const JerseyContextProvider = (props) => {
     }
 
     const clearCart = (productId) => {
+        clearProducts()
         setCartProducts((prev) => ({...prev, [productId]: prev[productId] = 0 }))
     }
 

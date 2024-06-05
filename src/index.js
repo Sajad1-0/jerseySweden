@@ -4,16 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {JerseyContextProvider} from './Context/JerseyContext';
-import { CartProvider } from './Context/CartContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <JerseyContextProvider>
-    <CartProvider>
   <React.StrictMode>
     <App/>
   </React.StrictMode>
-    </CartProvider>
   </JerseyContextProvider>
 );
 
