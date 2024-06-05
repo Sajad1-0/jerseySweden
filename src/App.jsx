@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Router, Routes, Route } from 'react-router-dom'
 import Kits from './Pages/Kits.jsx' 
 import Leagues from './Pages/Leagues.jsx' 
 import Contact from './Pages/Contact.jsx' 
@@ -17,8 +17,8 @@ const App = () => {
       <BrowserRouter>
       {/* Navvigation links include all pages in website */}
       <Navbar/>
-
-      <Routes basename='/Jersey-Sweden'>
+      <Router basename='/Jersey-Sweden'>
+      <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/kits/:id' element={<Kits/>}/>
         <Route path='/product/:id' element={<Kits/>}/>
@@ -32,6 +32,7 @@ const App = () => {
         <Route path='/confirmation' element={<ShopConfirmation/>} />
         <Route path='/login' element={<Login/>} />
       </Routes>
+      </Router>
 
       </BrowserRouter>
     </div>
