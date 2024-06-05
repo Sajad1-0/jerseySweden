@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Jersey-Sweden/static/css/main.9047b44a.css",
-    "main.js": "/Jersey-Sweden/static/js/main.30bde9bb.js",
-    "static/js/453.9a4e624b.chunk.js": "/Jersey-Sweden/static/js/453.9a4e624b.chunk.js",
-    "static/media/Swish Logo Primary PNG.png": "/Jersey-Sweden/static/media/Swish Logo Primary PNG.5c3f5207ea5b54893c1d.png",
-    "static/media/Background-image.jpg": "/Jersey-Sweden/static/media/Background-image.e06d2603a7981fdde71c.jpg",
-    "static/media/Star-full.png": "/Jersey-Sweden/static/media/Star-full.b05a7b42c2bc9ad88108.png",
-    "static/media/Star Half Full.png": "/Jersey-Sweden/static/media/Star Half Full.8c06f8d22b99623f805d.png",
-    "index.html": "/Jersey-Sweden/index.html",
-    "main.9047b44a.css.map": "/Jersey-Sweden/static/css/main.9047b44a.css.map",
-    "main.30bde9bb.js.map": "/Jersey-Sweden/static/js/main.30bde9bb.js.map",
-    "453.9a4e624b.chunk.js.map": "/Jersey-Sweden/static/js/453.9a4e624b.chunk.js.map"
+    "main.css": "/static/css/main.d68e30ac.css",
+    "main.js": "/static/js/main.d81f5ba5.js",
+    "static/js/453.9a4e624b.chunk.js": "/static/js/453.9a4e624b.chunk.js",
+    "static/media/Swish Logo Primary PNG.png": "/static/media/Swish Logo Primary PNG.5c3f5207ea5b54893c1d.png",
+    "static/media/Background-image.jpg": "/static/media/Background-image.e06d2603a7981fdde71c.jpg",
+    "static/media/Star-full.png": "/static/media/Star-full.b05a7b42c2bc9ad88108.png",
+    "static/media/Star Half Full.png": "/static/media/Star Half Full.8c06f8d22b99623f805d.png",
+    "index.html": "/index.html",
+    "main.d68e30ac.css.map": "/static/css/main.d68e30ac.css.map",
+    "main.d81f5ba5.js.map": "/static/js/main.d81f5ba5.js.map",
+    "453.9a4e624b.chunk.js.map": "/static/js/453.9a4e624b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9047b44a.css",
-    "static/js/main.30bde9bb.js"
+    "static/css/main.d68e30ac.css",
+    "static/js/main.d81f5ba5.js"
   ]
 }
