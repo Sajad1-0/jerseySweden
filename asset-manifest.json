@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jersey-sweden/static/css/main.d68e30ac.css",
-    "main.js": "/jersey-sweden/static/js/main.52835100.js",
+    "main.js": "/jersey-sweden/static/js/main.50c60f94.js",
     "static/js/453.9a4e624b.chunk.js": "/jersey-sweden/static/js/453.9a4e624b.chunk.js",
     "static/media/Swish Logo Primary PNG.png": "/jersey-sweden/static/media/Swish Logo Primary PNG.5c3f5207ea5b54893c1d.png",
     "static/media/Background-image.jpg": "/jersey-sweden/static/media/Background-image.e06d2603a7981fdde71c.jpg",
@@ -9,11 +9,11 @@
     "static/media/Star Half Full.png": "/jersey-sweden/static/media/Star Half Full.8c06f8d22b99623f805d.png",
     "index.html": "/jersey-sweden/index.html",
     "main.d68e30ac.css.map": "/jersey-sweden/static/css/main.d68e30ac.css.map",
-    "main.52835100.js.map": "/jersey-sweden/static/js/main.52835100.js.map",
+    "main.50c60f94.js.map": "/jersey-sweden/static/js/main.50c60f94.js.map",
     "453.9a4e624b.chunk.js.map": "/jersey-sweden/static/js/453.9a4e624b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d68e30ac.css",
-    "static/js/main.52835100.js"
+    "static/js/main.50c60f94.js"
   ]
 }
