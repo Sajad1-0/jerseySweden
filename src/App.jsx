@@ -14,11 +14,11 @@ import ShopConfirmation from './Pages/ShopConfirmation.jsx'
 const App = () => {
   return (
     <div className='bg-primary'>
-      <BrowserRouter>
+      <BrowserRouter >
       {/* Navvigation links include all pages in website */}
       <Navbar/>
 
-      <Routes>
+      <Routes basename="/jersey-sweden">
         <Route path='/' element={<Home/>} />
         <Route path='/kits/:id' element={<Kits/>}/>
         <Route path='/product/:id' element={<Kits/>}/>
