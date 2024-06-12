@@ -1,6 +1,6 @@
 {
   "name": "jersey-sweden",
-  "homepage": "https://sajad1-0.github.io",
+  "homepage": "https://sajad1-0.github.io/jersey-sweden",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }

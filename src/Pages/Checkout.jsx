@@ -27,15 +27,16 @@ const Checkout = () => {
     const [address, setAddress] = useState('');
 
 
-    // handle click for removing items from the cart 
-    const handlePay = () => {
-        console.log('hej');
-        clearCart();
+    
+     // handle click for removing items from the cart 
+     const handlePay = async () => {
+        await clearCart()
     }
     // Submit function for form 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
     
+        await handlePay();
 
         navigate('/confirmation', {
             state: {
@@ -131,7 +132,7 @@ const Checkout = () => {
                 </div>
             </label>
             <div className='flex'>
-            <button type='submit' onClick={() => handlePay()}
+            <button type='submit'
             className='w-[200px] mb-10 mx-4 bg-hoverColor rounded-2xl py-2
             font-semibold hover:shadow-md hover:shadow-textColor active:text-primary'>
                 PAY</button>
