@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d68e30ac.css",
-    "main.js": "/static/js/main.dcb09dc6.js",
+    "main.js": "/static/js/main.31c7032d.js",
     "static/js/453.9a4e624b.chunk.js": "/static/js/453.9a4e624b.chunk.js",
     "static/media/Swish Logo Primary PNG.png": "/static/media/Swish Logo Primary PNG.5c3f5207ea5b54893c1d.png",
     "static/media/Background-image.jpg": "/static/media/Background-image.e06d2603a7981fdde71c.jpg",
@@ -9,11 +9,11 @@
     "static/media/Star Half Full.png": "/static/media/Star Half Full.8c06f8d22b99623f805d.png",
     "index.html": "/index.html",
     "main.d68e30ac.css.map": "/static/css/main.d68e30ac.css.map",
-    "main.dcb09dc6.js.map": "/static/js/main.dcb09dc6.js.map",
+    "main.31c7032d.js.map": "/static/js/main.31c7032d.js.map",
     "453.9a4e624b.chunk.js.map": "/static/js/453.9a4e624b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d68e30ac.css",
-    "static/js/main.dcb09dc6.js"
+    "static/js/main.31c7032d.js"
   ]
 }
