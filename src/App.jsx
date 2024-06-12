@@ -18,7 +18,7 @@ const App = () => {
       {/* Navvigation links include all pages in website */}
       <Navbar/>
 
-      <Routes basename='/jersey-sweden'>
+      <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/kits/:id' element={<Kits/>}/>
         <Route path='/product/:id' element={<Kits/>}/>
