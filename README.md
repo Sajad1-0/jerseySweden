@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+You need to have node.js app to open the code!
+You need to install Tailwindcss to change the css styles: npm install tailwindcss. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
