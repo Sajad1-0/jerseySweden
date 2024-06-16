@@ -69,15 +69,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+****************************************
 
 **Features**
 
-Browse Jerseys: Explore jerseys from La Liga, Premier League, Serie A, and other leagues.
-Product Details: View detailed information about each jersey.
-Cart Management: Add jerseys to the cart, remove them, and view total quantities.
-Checkout Process: Complete purchases with a simple and intuitive checkout process.
-User Authentication: Login functionality for users.
-Responsive Design: Optimized for both desktop and mobile devices.
+* Browse Jerseys: Explore jerseys from La Liga, Premier League, Serie A, and other leagues.
+* Product Details: View detailed information about each jersey.
+* Cart Management: Add jerseys to the cart, remove them, and view total quantities.
+* Checkout Process: Complete purchases with a simple and intuitive checkout process.
+* User Authentication: Login functionality for users.
+* Responsive Design: Optimized for both desktop and mobile devices.
 
 **Live Demo**
 Check out the live demo of the app here: https://sajad1-0.github.io/jerseySweden/
