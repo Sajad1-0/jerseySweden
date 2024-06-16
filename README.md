@@ -1,6 +1,6 @@
 # Getting Started with Create React App
-You need to have node.js app to open the code!
-You need to install Tailwindcss to change the css styles: npm install tailwindcss. 
+You need to have node.js app to open the code and install npm packages like tailwindcss, React app and etc....
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -69,3 +69,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+**Features**
+
+Browse Jerseys: Explore jerseys from La Liga, Premier League, Serie A, and other leagues.
+Product Details: View detailed information about each jersey.
+Cart Management: Add jerseys to the cart, remove them, and view total quantities.
+Checkout Process: Complete purchases with a simple and intuitive checkout process.
+User Authentication: Login functionality for users.
+Responsive Design: Optimized for both desktop and mobile devices.
+
+**Live Demo**
+Check out the live demo of the app here: https://sajad1-0.github.io/jerseySweden/
+
+**Technologies Used**
+
+* Frontend: React, React Router
+* Styling: Tailwind CSS
+* State Management: Context API
+* Deployment: GitHub Pages
+* Icons: react-icons
+  
+**Installation**
+git clone https://github.com/sajad1-0/jersey-sweden.git
+cd jersey-sweden
+
+Install dependencies: npm install
+
+*************************************
+
+**Contributing**
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+* Fork the repository.
+* Create a new branch for your feature or bugfix.
+* Make your changes.
+* Submit a pull request.
+
+**Contact**
+For any inquiries or feedback, feel free to contact me at:
+
+Email: Sajjadqaderi00@gmail.com
+GitHub: sajad1-0
+
