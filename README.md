@@ -110,6 +110,6 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 **Contact**
 For any inquiries or feedback, feel free to contact me at:
 
-Email: Sajjadqaderi00@gmail.com
-GitHub: sajad1-0
+* Email: Sajjadqaderi00@gmail.com
+* GitHub: sajad1-0
 
