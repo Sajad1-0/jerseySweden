@@ -2,6 +2,7 @@ import React from 'react'
 import { FaCartShopping } from "react-icons/fa6"
 import {Link } from 'react-router-dom'
 import CartTotalQuantity from './CartTotalQuantity'
+import MobileNavbar from './MobileNavbar'
 
 
 //Menu links for the navigation menu
@@ -27,16 +28,16 @@ const MenuLinks = [
 const Navbar = () => {
 
   return (
-    <div className='bg-primary duration-200 realtive z-40'>
+    <div className='bg-primary duration-200 realtive z-40 border-2'>
       <div className='py-4'>
         <div className="container flex justify-between items-center lg:gap-4">
-
+          <MobileNavbar/>
           {/* Logo and links section */}
           <div className='flex items-center lg:gap-60'>
             
             <Link to="/" className='text-textColor font-semibold lg:tracking-wider 
             text-2xl lg:text-3xl uppercase hover:text-hoverColor duration-200
-            ml-28 md:ml-0'>
+            ml-2 md:ml-0'>
               Jersey Sweden</Link>
               
               {/* Menu links */}
